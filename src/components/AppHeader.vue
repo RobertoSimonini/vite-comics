@@ -67,7 +67,7 @@ export default {
             </figure>
             <nav>
                 <ul>
-                    <li v-for="link in links">
+                    <li v-for="link in links" :class="{active: link.current}">
                          <a href="#"> {{ link.text }} </a> 
                     </li>
                 </ul>
@@ -90,6 +90,8 @@ export default {
             li {
                 margin: 0 1rem;
                 a {
+                    font-size: 12.5px;
+                    text-transform: uppercase;
                     color: black;
                 }
             }
@@ -99,5 +101,10 @@ export default {
     ul li a:hover {
         color: dodgerblue;
     }
+
+    ul li a.active {
+        text-decoration: underline dodgerblue;
+        color: dodgerblue;
+  }
 
 </style>
