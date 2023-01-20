@@ -188,21 +188,20 @@ export default {
             * {   
                 flex-basis: calc(100% / 3)
             }
+
+            ul {
+                padding: 1rem 0;
+                h2 {
+                    color: white;
+                    padding: 0;
+                }
+                li a {
+                    color: gray;
+                    line-height: 25px;
+                }
+            }
     }
 
-    ul {
-
-        padding-bottom: 1rem;
-
-        h2 {
-            color: white;
-            padding: 0;
-        }
-        li a {
-            color: gray;
-            line-height: 25px;
-        }
-    }
 
     #footer-bottom {
         padding: 0 12.5%;
@@ -226,7 +225,6 @@ export default {
         color: dodgerblue;
         display: flex;
         align-items: center;
-
         ul {
             display: flex;
            
@@ -238,6 +236,7 @@ export default {
     }
 
     h2 {
+        margin: 0;
         padding: 0 0.5rem;
     }
 
