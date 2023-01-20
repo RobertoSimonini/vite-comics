@@ -196,6 +196,7 @@ export default {
 
         h2 {
             color: white;
+            padding: 0;
         }
         li a {
             color: gray;
