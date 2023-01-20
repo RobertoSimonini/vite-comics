@@ -1,17 +1,28 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
 export default {
   name: 'comics', 
-  components: {AppHeader}
+  components: {AppHeader, AppMain}
 }
 </script>
 
 
 <template>
-<app-header></app-header>
+
+  <div class="container">
+    <app-header></app-header>
+    <app-main></app-main>
+  </div>
+
 </template>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   /* Generics  */
 
   ul {

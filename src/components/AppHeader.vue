@@ -77,9 +77,11 @@ export default {
 
 <style lang="scss" scoped>
     header {
+        padding: 0 200px;
         height: 150px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         ul {
             display: flex;
@@ -88,4 +90,9 @@ export default {
             }
         }
     }
+
+    ul li a:hover {
+        color: dodgerblue;
+    }
+
 </style>
