@@ -199,6 +199,11 @@ export default {
                     color: gray;
                     line-height: 25px;
                 }
+
+                li a:hover {
+                    color: white;
+                    line-height: 25px;
+                }
             }
     }
 
