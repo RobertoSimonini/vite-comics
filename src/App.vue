@@ -27,6 +27,9 @@ export default {
   }
   /* Generics  */
 
+  body { font-family: "Open Sans Condensed", sans-serif; }
+
+
   .container {
     max-width: 75%;
     margin: 0 auto;
