@@ -22,7 +22,7 @@
 
 <style scoped>
     main {
-        padding: 0 200px;
+        padding: 0 12.5%;
         background-color: black;
         color: white;
         height: 200px;

@@ -60,24 +60,25 @@ export default {
 </script>
 
 <template>
-    <header>
-        <figure>
-            <img src="../assets/img/dc-logo.png" alt="">
-        </figure>
-        <nav>
-            <ul>
-                <li v-for="link in links">
-                     <a href="#"> {{ link.text }} </a> 
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <figure>
+                <img src="../assets/img/dc-logo.png" alt="">
+            </figure>
+            <nav>
+                <ul>
+                    <li v-for="link in links">
+                         <a href="#"> {{ link.text }} </a> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 </template>
 
 
 <style lang="scss" scoped>
     header {
-        padding: 0 200px;
         height: 150px;
         display: flex;
         justify-content: space-between;

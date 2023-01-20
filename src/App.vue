@@ -1,19 +1,21 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 export default {
   name: 'comics', 
-  components: {AppHeader, AppMain}
+  components: {AppHeader, AppMain, AppFooter}
 }
 </script>
 
 
 <template>
 
-  <div class="container">
+  
     <app-header></app-header>
     <app-main></app-main>
-  </div>
+    <app-footer></app-footer>
+  
 
 </template>
 
@@ -24,6 +26,11 @@ export default {
     box-sizing: border-box;
   }
   /* Generics  */
+
+  .container {
+    max-width: 75%;
+    margin: 0 auto;
+  }
 
   ul {
     list-style-type: none;
