@@ -192,11 +192,14 @@ export default {
 
     ul {
 
+        padding-bottom: 1rem;
+
         h2 {
             color: white;
         }
         li a {
             color: gray;
+            line-height: 25px;
         }
     }
 
