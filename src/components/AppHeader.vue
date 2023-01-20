@@ -88,6 +88,9 @@ export default {
             display: flex;
             li {
                 margin: 0 1rem;
+                a {
+                    color: black;
+                }
             }
         }
     }
