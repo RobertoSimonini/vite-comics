@@ -60,7 +60,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    
         <header>
             <figure>
                 <img src="../assets/img/dc-logo.png" alt="">
@@ -73,12 +73,13 @@ export default {
                 </ul>
             </nav>
         </header>
-    </div>
+    
 </template>
 
 
 <style lang="scss" scoped>
     header {
+        padding: 0 12.5%;
         height: 150px;
         display: flex;
         justify-content: space-between;

@@ -118,7 +118,53 @@ export default {
                     </ul>
                 </div>
             </nav>
+
+            <figure>
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+            </figure>
         </div>
+
+            <div id="footer-bottom">
+                <!-- Parte sinistra del footer-bottom con bottone di accedi  -->
+                <div class="sign-up">
+                    <button >
+                        SIGN-UP NOW!
+                    </button>
+                </div>
+
+                <!-- Qui metto la parte destra del footer ove posso trovare i link dei social  -->
+                <div class="social-medias">
+                    <h2>
+                        FOLLOW US
+                    </h2>
+
+                    <!-- QUi metto tutti i social  -->
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+
     </footer>
 </template>
 
@@ -126,7 +172,7 @@ export default {
 
 <style lang="scss" scoped>
     footer {
-        height: calc(100vh - 350px);
+        height: 600px;
         background-image: url(../assets/img/footer-bg.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -144,7 +190,6 @@ export default {
             }
     }
 
-
     ul {
 
         h2 {
@@ -154,4 +199,43 @@ export default {
             color: gray;
         }
     }
+
+    #footer-bottom {
+        padding: 0 12.5%;
+        height: 150px;
+        background-color: #303030;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            border: 1px solid dodgerblue;
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
+
+    .social-medias {
+        color: dodgerblue;
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+           
+        }
+
+        ul > * {
+            margin: 0 0.5rem;
+        }
+    }
+
+    h2 {
+        padding: 0 0.5rem;
+    }
+
+   
 </style>        

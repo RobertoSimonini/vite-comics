@@ -30,6 +30,8 @@ export default {
   .container {
     max-width: 75%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   ul {
