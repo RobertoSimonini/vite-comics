@@ -1,5 +1,7 @@
 <script>
+import AppShop from './AppShop.vue'
 export default {
+    components : {AppShop},
     data () {
         return {
             DcComics: [
@@ -68,6 +70,8 @@ export default {
 
 
 <template>
+    <app-shop></app-shop>
+    
     <footer>
         <div class="container">
 
@@ -120,59 +124,60 @@ export default {
             </nav>
 
             <figure>
-                <img src="../assets/img/dc-logo-bg.png" alt="">
+                <img class="big-logo" src="../assets/img/dc-logo-bg.png" alt="">
             </figure>
         </div>
 
-            <div id="footer-bottom">
-                <!-- Parte sinistra del footer-bottom con bottone di accedi  -->
-                <div class="sign-up">
-                    <button >
-                        SIGN-UP NOW!
-                    </button>
-                </div>
-
-                <!-- Qui metto la parte destra del footer ove posso trovare i link dei social  -->
-                <div class="social-medias">
-                    <h2>
-                        FOLLOW US
-                    </h2>
-
-                    <!-- QUi metto tutti i social  -->
-                    <ul>
-                        <li>
-                            <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
-                        </li>
-                        
-                    </ul>
-                </div>
-
-            </div>
-
+        
     </footer>
+
+    <div id="footer-bottom">
+        <!-- Parte sinistra del footer-bottom con bottone di accedi  -->
+        <div class="sign-up">
+            <button >
+                SIGN-UP NOW!
+            </button>
+        </div>
+
+        <!-- Qui metto la parte destra del footer ove posso trovare i link dei social  -->
+        <div class="social-medias">
+            <h2>
+                FOLLOW US
+            </h2>
+
+            <!-- QUi metto tutti i social  -->
+            <ul>
+                <li>
+                    <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </div>
 </template>
 
 
 
 <style lang="scss" scoped>
     footer {
-        height: 600px;
+        max-height: 600px;
         background-image: url(../assets/img/footer-bg.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -188,6 +193,7 @@ export default {
             * {   
                 flex-basis: calc(100% / 3)
             }
+
 
             ul {
                 padding: 1rem 0;
@@ -205,10 +211,17 @@ export default {
                     line-height: 25px;
                 }
             }
+
+            
     }
 
+    .big-logo {
+        height: 750px;
+    }
 
     #footer-bottom {
+        position: relative;
+        z-index: 1;
         padding: 0 12.5%;
         height: 150px;
         background-color: #303030;
