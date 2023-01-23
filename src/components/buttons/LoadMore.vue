@@ -8,7 +8,7 @@ export default {
     <button class="btn-blue">Load more</button>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
        .btn-blue {
             background-color: #0282F9;
             padding: 10px 30px;
@@ -17,5 +17,13 @@ export default {
             font-size: 15px;
             text-align: center;
             cursor: pointer;
+            transition: 0.25s;
+
+            &:hover {
+                color: #0282F9;
+                background-color: #fff;
+            }
         }
+
+
 </style>
