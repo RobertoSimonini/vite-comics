@@ -2,9 +2,10 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+import AppJumbotron from './components/AppJumbotron.vue'
 export default {
   name: 'comics', 
-  components: {AppHeader, AppMain, AppFooter},
+  components: {AppHeader, AppMain, AppFooter, AppJumbotron},
   data() {
     return {
       cards: [
@@ -103,6 +104,7 @@ export default {
 
   
     <app-header></app-header>
+    <app-jumbotron></app-jumbotron>
     <app-main :cards="cards"></app-main>
     <app-footer></app-footer>
   
