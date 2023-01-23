@@ -236,6 +236,12 @@ export default {
             padding: 10px 20px;
             cursor: pointer;
             font-size: 18px;
+            transition: 0.25s;
+
+            &:hover {
+                transform: scale(1.10);
+
+            }
         }
     }
 
@@ -250,6 +256,11 @@ export default {
 
         ul > * {
             margin: 0 0.5rem;
+            transition: 0.25s;
+
+            &:hover {
+                transform: scale(1.25);
+            }
         }
     }
 
