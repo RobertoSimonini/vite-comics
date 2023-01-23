@@ -1,8 +1,9 @@
 <script>
-import CardComic from './Products/CardComic.vue'
+import CardComic from './products/CardComic.vue'
+import LoadMore from './buttons/LoadMore.vue'
 export default {
         name: 'AppMain',
-        components: {CardComic},
+        components: {CardComic, LoadMore},
         props: {
             cards: Array
         }
@@ -16,6 +17,7 @@ export default {
     <main>
         <div class="card-container">
             <card-comic v-for="card in cards" :card="card"></card-comic>
+            <load-more></load-more>
         </div>
     </main>
 </template>
@@ -34,6 +36,7 @@ export default {
         .card-container {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             margin: 2rem;
 
             .comic-card {
@@ -41,6 +44,7 @@ export default {
             }
         }
 
+        
 
     }
     
