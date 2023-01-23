@@ -1,6 +1,8 @@
 <script>
-    export default {
+import CardComic from './CardComic.vue'
+export default {
         name: 'AppMain',
+        components: {CardComic},
         props: {
             cards: Array
         }
@@ -12,8 +14,8 @@
 
 <template>
     <main>
-        <div class="card-container container">
-
+        <div class="card-container">
+            <card-comic v-for="card in cards" :card="card"></card-comic>
         </div>
     </main>
 </template>
@@ -24,7 +26,7 @@
         padding: 0 12.5%;
         background-color: #1C1C1C;
         color: white;
-        height: 500px;
+        height: 750px;
         display: flex;
         align-items: center;
 
@@ -36,6 +38,8 @@
 
             .comic-card {
                 flex-basis: calc(100% / 6);
+
+                
             }
         }
 
