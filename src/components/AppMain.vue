@@ -1,5 +1,5 @@
 <script>
-import CardComic from './CardComic.vue'
+import CardComic from './Products/CardComic.vue'
 export default {
         name: 'AppMain',
         components: {CardComic},
@@ -37,9 +37,7 @@ export default {
             margin: 2rem;
 
             .comic-card {
-                flex-basis: calc(100% / 6);
-
-                
+                flex-basis: calc(100% / 6);         
             }
         }
 
