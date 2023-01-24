@@ -55,6 +55,12 @@ export default {
             },
             ]
         }
+    },
+
+    methods: {
+        changeActive(i){
+            this.links[i].current = !this.links[i].current
+        }
     }
 }
 </script>
@@ -67,8 +73,8 @@ export default {
             </figure>
             <nav>
                 <ul>
-                    <li v-for="link in links" :class="{active: link.current}">
-                         <a href="#"> {{ link.text }} </a> 
+                    <li v-for="(link, i) in links" :class="{active: link.current}">
+                         <a href="#" @click="changeActive(i)"> {{ link.text }} </a> 
                     </li>
                 </ul>
             </nav>
@@ -102,9 +108,9 @@ export default {
         color: dodgerblue;
     }
 
-    ul li a.active {
+    .active {
         text-decoration: underline dodgerblue;
         color: dodgerblue;
-  }
+    }
 
 </style>
