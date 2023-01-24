@@ -86,10 +86,14 @@ export default {
 <style lang="scss" scoped>
     header {
         padding: 0 12.5%;
-        height: 150px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        img {
+            height: 75px;
+        }
 
         ul {
             display: flex;
